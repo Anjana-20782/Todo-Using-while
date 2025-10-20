@@ -2,7 +2,7 @@ let Todo=[];
 
 while(true){
 
-    let input=prompt("Enter input values \n [1] Add Task \n [2] Display Task \n [5]Exit")
+    let input=prompt("Enter input values \n [1] Add Task \n [2] Display Task \n [4] Delete \n [5]Exit")
 
     if(input=="1"){
         let task=prompt("Enter Task Here");
@@ -16,6 +16,13 @@ while(true){
             str+=`${i+1} ${Todo[i]} \n`
         }
         alert(str)
+    }
+    else if(input=="4"){
+
+
+       let task= prompt("delete all task")
+         Todo.splice(task)
+
     }
     else if(input=="5"){
         break
