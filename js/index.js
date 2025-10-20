@@ -2,7 +2,7 @@ let Todo=[];
 
 while(true){
 
-    let input=prompt("Enter input values \n [1] Add Task \n [2] Display Task")
+    let input=prompt("Enter input values \n [1] Add Task \n [2] Display Task \n [5]Exit")
 
     if(input=="1"){
         let task=prompt("Enter Task Here");
@@ -17,5 +17,8 @@ while(true){
         }
         alert(str)
     }
-    
+    else if(input=="5"){
+        break
+    }
+    else("Invalid entry try again")
 }
